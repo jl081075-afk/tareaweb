@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Tailwind CSS</title>
+    <!-- CDN de Tailwind CSS v3 -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-yellow-200 min-h-screen flex flex-col justify-between font-sans text-gray-800">
+
+    <!-- Encabezados superiores -->
+    <header class="w-full text-center pt-4 space-y-2">
+        <div class="border-b-4 border-indigo-600 pb-1 bg-yellow-300">
+            <h1 class="text-2xl font-bold text-indigo-900">TAREA DE LA PRIMERA CAJA</h1>
+        </div>
+        <div class="border-b-4 border-indigo-600 pb-1 bg-yellow-300">
+            <h2 class="text-xl font-semibold text-indigo-800">Diseñado por Jose Ignacio Lopez Valero</h2>
+        </div>
+        <div class="h-6 bg-yellow-400 border-b-4 border-indigo-600">
+            <!-- Tercera caja solo para mostrar color -->
+        </div>
+    </header>
+
+    <!-- Contenido Principal: Grid de 3 Columnas -->
+    <main class="container mx-auto px-4 py-8 max-w-5xl">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center items-center">
+            
+            <!-- COLUMNA 1: Blur & Intensidad -->
+            <div class="flex flex-col items-center space-y-8 w-full">
+                <!-- Imagen en Círculo con Blur -->
+                <div class="flex flex-col items-center">
+                    <span class="text-lg font-bold mb-2 text-gray-700">blur</span>
+                    <div class="w-40 h-40 rounded-full overflow-hidden shadow-lg bg-orange-500">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Jack-o%27-Lantern_2003-10-31.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" 
+                             alt="Blur" 
+                             class="w-full h-full object-cover blur-md">
+                    </div>
+                </div>
+
+                <!-- Cuadrado con Intensidad -->
+                <div class="flex flex-col items-center w-full">
+                    <span class="text-lg font-bold mb-2 text-gray-700">intensidad</span>
+                    <div class="w-44 h-44 bg-blue-500 rounded-lg overflow-hidden shadow-md">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Jack-o%27-Lantern_2003-10-31.jpg?utm_source=es.wikipedia.org&utm_campaign=index&utm_content=original" 
+                             alt="Intensidad" 
+                             class="w-full h-full object-cover brightness-150 contrast-125">
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA 2: Transparente & Opacidad -->
+            <div class="flex flex-col items-center space-y-8 w-full">
+                <!-- Imagen en Círculo Transparente -->
+                <div class="flex flex-col items-center">
+                    <span class="text-lg font-bold mb-2 text-gray-700">transparente</span>
+                    <div class="w-40 h-40 rounded-full overflow-hidden shadow-lg bg-orange-500">
+                        <img src="https://media.ef.com/13-strange-and-thrilling-facts-about-halloween_568x464.png?vh=6ad1e4&w=620&q=70&optipress=3&force_format=avif" 
+                             alt="Transparente" 
+                             class="w-full h-full object-cover opacity-40">
+                    </div>
+                </div>
+
+                <!-- Cuadrado con Opacidad -->
+                <div class="flex flex-col items-center w-full">
+                    <span class="text-lg font-bold mb-2 text-gray-700">opacidad</span>
+                    <div class="w-44 h-44 bg-blue-500 rounded-lg overflow-hidden shadow-md">
+                        <img src="https://media.ef.com/13-strange-and-thrilling-facts-about-halloween_568x464.png?vh=6ad1e4&w=620&q=70&optipress=3&force_format=avif" 
+                             alt="Opacidad" 
+                             class="w-full h-full object-cover opacity-60">
+                    </div>
+                </div>
+            </div>
+
+            <!-- COLUMNA 3: Escalada en grises & Libre -->
+            <div class="flex flex-col items-center space-y-8 w-full">
+                <!-- Imagen en Círculo Escalada en Grises -->
+                <div class="flex flex-col items-center">
+                    <span class="text-lg font-bold mb-2 text-gray-700">escalada en grises</span>
+                    <div class="w-40 h-40 rounded-full overflow-hidden shadow-lg bg-orange-500 flex items-center justify-center">
+                        <img src="https://content-historia.nationalgeographic.com.es/medio/2022/10/28/calabaza_98056d65_1280x854.jpg" 
+                             alt="Escalada en grises" 
+                             class="w-full h-full object-cover scale-125 grayscale">
+                    </div>
+                </div>
+
+                <!-- Cuadrado Libre -->
+                <div class="flex flex-col items-center w-full">
+                    <span class="text-lg font-bold mb-2 text-gray-700">libre</span>
+                    <div class="w-44 h-44 bg-purple-600 rounded-lg overflow-hidden shadow-md">
+                        <img src="https://content-historia.nationalgeographic.com.es/medio/2022/10/28/calabaza_98056d65_1280x854.jpg" 
+                             alt="Libre" 
+                             class="w-full h-full object-cover shadow-inner">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Pie de página (Footer) -->
+    <footer class="w-full bg-yellow-300 border-t-4 border-indigo-600 py-3 text-center">
+        <p class="text-xl font-bold text-gray-800">
+            Diseñado por: Jose Ignacio Lopez Valero
+        </p>
+    </footer>
+
+</body>
+</html>
